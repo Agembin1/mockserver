@@ -45,7 +45,7 @@ public class KeyStoreFactory {
      * {@link SSLContext}: Every implementation of the Java platform is required
      * to support the following standard SSLContext protocol: TLSv1
      */
-    private static final String SSL_CONTEXT_FALLBACK_PROTOCOL = "TLSv1";
+    private static final String SSL_CONTEXT_FALLBACK_PROTOCOL = null;
 
     private SSLContext sslContext;
     private final Configuration configuration;

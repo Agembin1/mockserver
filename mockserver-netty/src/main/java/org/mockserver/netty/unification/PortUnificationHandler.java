@@ -228,6 +228,7 @@ public class PortUnificationHandler extends ReplayingDecoder<Void> {
     }
 
     private void enableTls(ChannelHandlerContext ctx, ByteBuf msg) {
+        System.out.println("\n\n\n" + "****************** PortUnificationHandler: enableTls *********************");
         ChannelPipeline pipeline = ctx.pipeline();
         pipeline.addFirst(new SniHandler(configuration, nettySslContextFactory));
         enableSslUpstreamAndDownstream(ctx.channel());
